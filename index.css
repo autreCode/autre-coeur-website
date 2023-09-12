@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.left-50 {
+    left: 50%;
+}
+.right-50 {
+    right: 50%;
+}
+.top-50 {
+    top: 50%;
+}
+
+
+
+.-z-1 {
+    z-index: -1;
+}
+
+.secondary-title {
+    @apply text-3xl;
+}
+
+.page-title {
+    @apply text-4xl font-bold;
+}
+
+.secondarysub {
+    @apply text-2xl uppercase mt-6 mb-3;
+}
+
+.secondarysubsm {
+    @apply text-lg md:text-xl uppercase mt-6;
+}
+
+.description {
+    @apply text-sm md:text-base;
+}
+
+.tertiary-title {
+    @apply text-xl underline;
+}
+
+.imagetext {
+    @apply text-sm text-grey italic;
+}
+
+.section-paragraph {
+    @apply text-secondary w-full max-w-5xl;
+}
+
+.badge {
+    @apply px-4 py-2 text-sm rounded bg-badge;
+}
+
+[id] {
+scroll-margin-top: 100px;
+}
+
+.left-percentage {
+    left: 5%;
+}
+
+.h-screen-partial {
+    height: 80vh;
+}
+
+.nav-dot {
+    transition: background 200ms, border-color 200ms;
+}
+
+.selected-circle {
+    @apply border-theme bg-theme;
+}
+
+.nav-dot:hover span {
+    opacity: 1;
+}
+
+/*code markup */
+pre {
+    @apply whitespace-pre-line w-full pl-6 text-xs bg-code-body border-l-2 border-orange text-code-text break-words;
+}
+
+/*NMKR image galleries */
+#container {
+    @apply w-full text-[0px] text-center items-center max-w-5xl;
+}
+#container div img {
+    @apply text-center items-center pb-3;
+}
+.imageCaption {
+    @apply pb-6 text-xs md:text-sm m-0;
+}
+.divItem {
+    @apply px-1 inline-block w-full md:w-1/4 text-center items-center p-0 m-0;
+}
+
+
+svg:hover {
+    fill: red;
+  }
