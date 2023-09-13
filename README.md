@@ -50,6 +50,16 @@ Welcome to the source code of autre coeur, a portfolio and personal webpage for 
   - *colors*: Custom colors are defined here, which can then be used throughout the site by referencing these names. This helps maintain a consistent color scheme.
   - *fontFamily*: Specifies custom font definitions. Here, the 'Poppins' font is added and set as the default sans-serif font.
   - *variants*: This is an extension point. Right now, no specific variants are extended, but it provides a place to customize or add responsiveness or states (like hover, focus) to various utilities.
+- **index.css**:
+  - Incorporates base, component, and utility styles from Tailwind CSS using the @tailwind directives.
+  - Defines custom styles, like smooth scrolling for the entire webpage.
+  - Introduces utility classes for element positioning, such as .left-50 which sets the left property to 50%.
+  - Provides custom text styles and typography utilities, including font sizes and styles for titles, subtitles, and description text.
+  - Specifies styles related to unique web elements like badges, navigation dots, and image galleries.
+  - Adds styling for code block presentations with a background and a distinctive border.
+  - Incorporates styles specific for NMKR image galleries, ensuring proper formatting of images and captions.
+  - Includes a hover effect for SVG elements, changing their fill color to red when hovered over.
+- **package.json**: Specifies information required for the configuration of Tailwind CSS + build script and license information.
 - **robots.txt**: Typical robots.txt instructing all user-agents (i.e., web crawlers) to access and index all parts of the site (the Disallow: directive without a following path means there are no restrictions.)
 - **js/main.js**: Contains JavaScript functionalities.
 - **collections json/**: Directory containing NFT collection metadata and IPFS image addresses.
